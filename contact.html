@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href=""style.css">
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Bootstrap Icons</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg bg-primary bg-opacity-10 py-3 px-3 id=navmenu row">
+            <div class="container">
+                <a class="navbar-brand" href="mainsite.html"> 
+                <img src="IMG/Logos For Web/svg/Color logo - no background.svg" class="img-fluid" alt="logo" width="300" height="">
+                </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>    
+                
+                    
+                    <div class="collapse navbar-collapse" id="navmenu">
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="mainsite.html#aboutMe">About me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mainsite.html#portfolio">Portfolio</a>
+                            </li>
+                        </ul>
+                        <div>
+                        <form class="form-inline" class="container-fluid justify-content-end">
+                            <button class="btn btn-primary btn-sm" type="button"> <span class="bi-download"</span> Resume</button>
+                            <a href="contact.html" class="btn btn-outline-primary btn-sm" type="button"> <span class="bi-person-lines-fill"</span> Contact</a>
+                        </form>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+
+
+    <!--Contact me: message-->
+    <section class="bg-primary bg-opacity-10 p-sm-1 p-md-2 p-lg-3 pt-lg-5 text-center text-md-start row">
+        <div class="container-fluid">
+            <div class="container-fluid d-md-flex align-items-left px-sm-1 px-md-3 px-lg-5 px-xl-5 row">
+                <div class="container-fluid px-sm-1 px-md-3 px-lg-5 px-xl-5">
+                    <h3 class="text-center">Contact me</h3>
+                    <p class="lead my-4 text-center">
+                        I would love to hear from anyone interested in hiring me, wanting to learn more about my projects or seeking/offering mentoring opportunities. <span class="fw-bold">Lets connect and talk product management!</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact form-->
+    <section class="bg-primary bg-opacity-10 p-sm-1 p-md-2 p-lg-3 row">
+        <div class="container-fluid bg-light p-5 rounded w-75 p-sm-1 p-md-2 p-lg-3 mb-2">
+        <form class="bg-light px-sm-1 py-sm-0 py-md-3 px-md-5 py-lg-3 px-lg-5 justify-content-center" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+        <input type="hidden" name="access_key" value="db89311b-be30-4741-8bed-10099b93009d">
+        <input type="hidden" name="subject" value="New submission from the product pragmatist website" />
+        <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            
+        <div class="mb-3">
+            <label class="form-label" for="name">Name</label>
+            <input class="form-control" id="name" type="text" placeholder="Jane Doe" name="name" required />
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label" for="emailAddress">Email Address</label>
+            <input class="form-control" id="emailAddress" type="email" placeholder="example@example.com" name="email" required/>
+        </div>
+    
+        <div class="mb-3">
+            <label class="form-label" for="message">Message</label>
+            <textarea class="form-control" id="message" type="text" placeholder="" style="height: 10rem;" name="message" required></textarea>
+        </div>
+    
+        <div>
+            <button class="btn btn-primary btn-md" type="submit">Submit</button>
+        </div>
+        
+        <div id="result"></div>
+        
+        </form>
+    </div>
+    </section>
+
+    <!--Contact info-->
+    <section class="bg-primary bg-opacity-10 p-sm-1 p-md-2 p-lg-3 row">
+        <div class="container-fluid bg-light rounded w-75 p-sm-1 p-md-2 p-lg-3 mb-2">
+            <div class="container-fluid px-5 py-3">
+                <p><span class="bi-telephone-fill"></span> +44 (0)7749 89992</p>
+                <p>
+                    <span class="bi-envelope-fill"></span>
+                    <a href="mailto:joeflagg@gmail.com"> joeflaggpm@gmail.com</a>
+                </p>
+                <a href="https://www.linkedin.com/in/joseph-flagg-12b57544/" type="button" class="btn btn-primary p-2 me-2"><i class="bi-linkedin h2"></i></a>
+                <a href="https://github.com/jflaggy" type="button" class="btn btn-primary p-2"><i class="bi-github h2"></i></a>
+            </div>
+        </div>
+    </section>
+    </body>
+</html>
